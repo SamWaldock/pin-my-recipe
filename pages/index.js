@@ -8,7 +8,8 @@ export default function Index() {
         <Head>
           <title>Pin My Recipe | Recipes</title>
         </Head>
-        <p>Test</p>
+        <main>
+        </main>
       </Layout>
     </>
   )
