@@ -1,0 +1,47 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "uid",
+        "placeholder" : "unique-identifier-for-recipe-url"
+      }
+    },
+    "name" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label" : "name"
+      }
+    },
+    "description" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "description"
+      }
+    },
+    "ingredients" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "list-item",
+        "label" : "ingredients"
+      }
+    },
+    "preparation" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph,o-list-item",
+        "label" : "preparation"
+      }
+    },
+    "chef" : {
+      "type" : "Link",
+      "config" : {
+        "select" : "document",
+        "customtypes" : [ "chef" ],
+        "label" : "chef"
+      }
+    }
+  }
+}
