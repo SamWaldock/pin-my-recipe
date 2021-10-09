@@ -1,5 +1,7 @@
-export default function RecipePreview({ content }) {
+import { RichText } from 'prismic-reactjs'
+
+export default function RecipePreview({ recipe }) {
   return (
-    <p>{content}</p>
+    <RichText render={recipe.name} />
   )
 }

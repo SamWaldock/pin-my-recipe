@@ -1,0 +1,18 @@
+.recipeList {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 800px) {
+  .recipeList {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .recipeList {
+    grid-template-columns: auto auto auto;
+  }
+}

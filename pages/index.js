@@ -1,28 +1,24 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { getAllRecipes } from '../lib/api'
+import RecipeList from '../components/recipe-list'
 
 export default function Index({ recipes }) {
   return (
     <>
-      <Layout preview={preview}>
+      <Layout>
         <Head>
           <title>Pin My Recipe | Recipes</title>
         </Head>
-        <main>
-          <p>Recipes</p>
-        {recipes.map((recipe) => (
-          <p key={post.id}>{recipe.name}</p>
-        ))}
-        </main>
+        {recipes.length > 0 && <RecipeList recipes={recipes} />}
       </Layout>
     </>
   )
 }
 
 export async function getStaticProps({ previewData }) {
-  const allRecipes = await getAllRecipes(previewData)
+  const recipes = await getAllRecipes(previewData)
   return {
-    props: { allRecipes },
+    props: { recipes },
   }
 }
