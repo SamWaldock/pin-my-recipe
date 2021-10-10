@@ -14,3 +14,25 @@
   background-size: cover;
   background-position: center;
 }
+
+.chef {
+  display: table;
+  padding-top: 30px;
+}
+
+.imageChef {
+  display: table-cell;
+  border-radius: 50px;
+}
+
+.chefName {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+@media only screen and (min-width: 900px) {
+  .detail {
+    width: 800px;
+  }
+}
