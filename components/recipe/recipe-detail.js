@@ -6,7 +6,6 @@ export default function RecipeDetail({ recipe }) {
   const duration = [...Array(recipe.duration)]
   const budget = [...Array(recipe.budget)]
   const difficulty = [...Array(recipe.difficulty)]
-  console.log(difficulty)
   return (
     <section className={styles.detail}>
       <RichText render={recipe.name} />
