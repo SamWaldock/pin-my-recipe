@@ -1,7 +1,6 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { RichText } from 'prismic-reactjs'
-import styles from '../styles/recipe-preview.module.css'
+import styles from '../../styles/home/recipe-preview.module.css'
 
 export default function RecipePreview({ recipe }) {
   return (

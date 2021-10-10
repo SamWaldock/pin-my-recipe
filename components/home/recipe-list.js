@@ -1,4 +1,4 @@
-import styles from '../styles/recipe-list.module.css'
+import styles from '../../styles/home/recipe-list.module.css'
 import RecipePreview from './recipe-preview'
 
 export default function RecipeList({ recipes }) {

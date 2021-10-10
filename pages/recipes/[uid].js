@@ -3,7 +3,7 @@ import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Layout from '../../components/layout'
 import { getRecipe, getAllRecipeUids } from '../../lib/api'
-import RecipeDetail from '../../components/recipe-detail'
+import RecipeDetail from '../../components/recipe/recipe-detail'
 
 export default function Recipe({ recipe }) {
   const router = useRouter()

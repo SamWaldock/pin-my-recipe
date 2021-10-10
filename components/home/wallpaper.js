@@ -1,4 +1,4 @@
-import styles from '../styles/wallpaper.module.css'
+import styles from '../../styles/home/wallpaper.module.css'
 
 export default function Wallpaper() {
   return (

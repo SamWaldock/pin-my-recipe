@@ -1,13 +1,27 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { RichText } from 'prismic-reactjs'
-import styles from '../styles/recipe-detail.module.css'
+import styles from '../../styles/recipe/recipe-detail.module.css'
 
 export default function RecipeDetail({ recipe }) {
-  console.log(recipe.chef.name)
+  const duration = [...Array(recipe.duration)]
+  const budget = [...Array(recipe.budget)]
+  const difficulty = [...Array(recipe.difficulty)]
+  console.log(difficulty)
   return (
     <section className={styles.detail}>
       <RichText render={recipe.name} />
+      <span>
+        Duration:&nbsp;
+        {duration.map(_=>"🕒")}
+      </span>
+      <span>
+        &nbsp;&nbsp;Budget:&nbsp;
+        {budget.map(_=>"💰")}
+      </span>
+      <span>
+        &nbsp;&nbsp;Difficulty:&nbsp;
+        {difficulty.map(_=>"😓")}
+      </span>
       <RichText render={recipe.description} />
       <div className={styles.image} style={{backgroundImage: "url(" + recipe.picture.url + ")"}}></div>
       <article className={styles.chef}>
