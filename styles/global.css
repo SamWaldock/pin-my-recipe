@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  color: #529700;
+  font-size: 2em;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+h2 {
+  color: #529700;
+  font-weight: normal;
+}

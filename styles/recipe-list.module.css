@@ -1,17 +1,28 @@
+.title {
+  padding-left: 0;
+  text-align: center;
+}
+
 .recipeList {
   display: grid;
   grid-template-columns: auto;
   width: 100%;
   height: auto;
+  text-align: center;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
+  .title {
+    padding-left: 20px;
+    text-align: left;
+  }
+
   .recipeList {
     grid-template-columns: auto auto;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .recipeList {
     grid-template-columns: auto auto auto;
   }

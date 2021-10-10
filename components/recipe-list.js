@@ -3,13 +3,16 @@ import RecipePreview from './recipe-preview'
 
 export default function RecipeList({ recipes }) {
   return (
-    <section className={styles.recipeList}>
-      {recipes.map(( recipe ) => (
-        <RecipePreview
-          key={recipe.node._meta.uid}
-          recipe={recipe.node}
-        />
-      ))}
-    </section>
+    <>
+      <h1 className={styles.title}>Popular recipes</h1>
+      <section className={styles.recipeList}>
+        {recipes.map(( recipe ) => (
+          <RecipePreview
+            key={recipe.node._meta.uid}
+            recipe={recipe.node}
+          />
+        ))}
+      </section>
+    </>
   )
 }

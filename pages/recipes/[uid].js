@@ -3,6 +3,7 @@ import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Layout from '../../components/layout'
 import { getRecipe, getAllRecipeUids } from '../../lib/api'
+import RecipeDetail from '../../components/recipe-detail'
 
 export default function Recipe({ recipe }) {
   const router = useRouter()
@@ -13,10 +14,9 @@ export default function Recipe({ recipe }) {
   return (
     <Layout>
       <Head>
-        <title>
-          {recipe.name[0].text} | Pin My Recipe
-        </title>
+        <title>{recipe.name[0].text} | Pin My Recipe</title>
       </Head>
+      <RecipeDetail recipe={recipe} />
     </Layout>
   )
 }

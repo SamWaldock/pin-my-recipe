@@ -1,6 +1,5 @@
 import Meta from '../components/meta'
 import Header from '../components/header'
-import Wallpaper from './wallpaper'
 import Footer from '../components/footer'
 
 export default function Layout({ children }) {
@@ -8,8 +7,7 @@ export default function Layout({ children }) {
     <>
       <Meta />
       <Header />
-      <Wallpaper />
-      <main>{children}</main>
+      {children}
       <Footer />
     </>
   )

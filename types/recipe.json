@@ -14,6 +14,14 @@
         "label" : "name"
       }
     },
+    "picture" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "picture"
+      }
+    },
     "description" : {
       "type" : "StructuredText",
       "config" : {
@@ -21,18 +29,36 @@
         "label" : "description"
       }
     },
+    "duration" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "duration"
+      }
+    },
+    "budget" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "budget"
+      }
+    },
+    "difficulty" : {
+      "type" : "Number",
+      "config" : {
+        "label" : "difficulty"
+      }
+    },
     "ingredients" : {
       "type" : "StructuredText",
       "config" : {
-        "multi" : "list-item",
+        "multi" : "paragraph,preformatted,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
         "label" : "ingredients"
       }
     },
-    "preparation" : {
+    "method" : {
       "type" : "StructuredText",
       "config" : {
         "multi" : "paragraph,o-list-item",
-        "label" : "preparation"
+        "label" : "method"
       }
     },
     "chef" : {
