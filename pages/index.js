@@ -18,7 +18,7 @@ export default function Index({ recipes }) {
   )
 }
 
-export async function getStaticProps({ previewData }) {
+export async function getServerSideProps({ previewData }) {
   const recipes = await getAllRecipes(previewData)
   return {
     props: { recipes },
